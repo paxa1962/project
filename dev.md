@@ -1,2 +1,0 @@
-# hi dev
-hi friend
