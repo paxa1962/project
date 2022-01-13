@@ -4,7 +4,7 @@ wb = xw.Book('workbook.xlsx')
 sheet = wb.sheets['miir_pptk_stat_col']
 #print(sheet.range('I:I')[1:10].value) #Весь столбец с 1 по 10 строку
 
-rng = sheet.range((2, 'G'), (7027, 'I')).value
+rng = sheet.range((2, 'G'), (7027, 'I')).value #Выбираем диапазон
 for row in rng:
     if row[0] == 'CHANGEDATE':
         row[2] = 'Дата изменения'
